@@ -1,3 +1,91 @@
 #order-second-step {
     display: none;
 }
+
+
+/* ======================================== */
+/* ========= add order-footer-eat ========= */
+/* ======================================== */
+.order-footer-eat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin: 30px 0 100px 0;
+}
+
+.eat-box{
+    margin-top: 30px;
+}
+
+.eat-box-img{
+    width: 250px;
+    /* height: 85%; */
+}
+.eat-box-title{
+    margin-top: 30px;
+}
+.eat-box-title-01{
+    margin-top: 65px;
+}
+.eat-box-numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eat-box-numbers-num{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #dddd;
+    border-radius: 5px;
+}
+
+#buttonCountPlus{
+    color: #ffffff;
+    background-color: #0099ff;
+    border: none;
+    padding: 10px 8px 10px 8px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#buttonCountMinus{
+    color: #ffffff;
+    background-color: #0099ff;
+    border: none;
+    padding: 10px 8px 10px 8px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+input[type=text]{
+    text-align-last: center;
+    border: none;
+}
+
+
+/* -------------- @media -------------- */
+@media screen and (max-width: 1200px) {
+    .order-footer-eat{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .order-footer-eat{
+        justify-content: center;
+    }
+}
+/* ======================================== */
+/* ======================================== */
+/* ======================================== */
+
