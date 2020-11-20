@@ -78,6 +78,7 @@
     padding: 10px 8px 10px 8px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    /*id - это уникальный элемент, он не может называться у всех кнопках одинаково. использую для этого стилей классы*/
 }
 
 #buttonCountMinus{
@@ -89,9 +90,10 @@
     border-top-left-radius: 5px;
 }
 
-input[type=text]{
+#order-second-step input[type=text]{
     text-align-last: center;
-    border: none;
+    /*border: none;*/  
+    /*используй родительские классы ты мне ламаешь остальную верстку используя стили ко всем инпутам*/
 }
 
 
