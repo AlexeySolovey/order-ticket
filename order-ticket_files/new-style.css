@@ -2,6 +2,23 @@
     display: none;
 }
 
+.fields-block > div {
+    margin-bottom: 10px;
+}
+
+.fields-block label{
+    white-space: nowrap;
+}
+
+.fields-block input,
+.fields-block select{
+    width: 100%;
+}
+
+
+#order-second-step {
+    display: none;
+}
 
 /* ======================================== */
 /* ========= add order-footer-eat ========= */

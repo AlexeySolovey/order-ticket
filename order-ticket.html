@@ -527,14 +527,15 @@
                     <span class="error-text"></span>
                 </div>
             </div>
-                                    <div>
-                            <h4>Сервисные услуги: </h4>
-                            <div class="fields-block">
-                                <div class="form-group">
-                                <div data-id_to="TIA_KBP" data-id_back="KBP_TIA" data-n_index="0" class="btn btn-default nutrition-btn">Добавить питание</div>                            </div>
-                            </div>
-                        </div>
-                        </div>
+            <div>
+                <h4>Сервисные услуги: </h4>
+                <div class="fields-block">
+                    <div class="form-group">
+                        <div data-id_to="TIA_KBP" data-id_back="KBP_TIA" data-n_index="0" class="btn btn-default nutrition-btn">Добавить питание</div>   
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
 
             <!-- / first block-->
@@ -552,21 +553,21 @@
                     <div class="col-sm-9">
                         <h2>Выберите питание в самолет</h2>
                         
-                        <ul class="nav nav-tabs" id="nav-tab">
-                            <li class="nav-item">
-                              <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Active</a>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item active">
+                              <a class="nav-link" data-toggle="tab" href="#eat-tab1">KBP - BOJ</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">KBP - BOJ</a>
+                              <a class="nav-link" data-toggle="tab" href="#eat-tab2">KBP - BOJ</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">BOJ - KBP</a>
+                              <a class="nav-link" data-toggle="tab" href="#eat-tab3">BOJ - KBP</a>
                             </li>
                         </ul>
 
-                        <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-content">
                             <!-- 1 -->
-                            <div class="tab-pane fade active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="tab-pane active" id="eat-tab1" role="tabpanel">
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Kids-Skybox.png" alt="img" >
@@ -630,7 +631,7 @@
                                 </div>
                             </div>
                             <!-- 2 -->
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="tab-pane fade" id="eat-tab2" role="tabpanel">
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Kids-Skybox.png" alt="img" >
@@ -694,7 +695,7 @@
                                 </div>
                             </div>
                             <!-- 3 -->
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="tab-pane fade" id="eat-tab3" role="tabpanel">
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Kids-Skybox.png" alt="img" >
@@ -766,27 +767,25 @@
                 
                 <!-- табы с багажом -->
                 <div class="row">
-                    <div class="col-sm-3" style="background: lightblue;">
-                        user-info
-                    </div>
+                    <div class="col-sm-3"></div>
                     <div class="col-sm-9">
                         <h2>Выберите багаж в самолет</h2>
                         
-                        <ul class="nav nav-tabs" id="nav-tab">
-                            <li class="nav-item">
-                              <a class="nav-link active" id="nav-baggage-tab" data-toggle="tab" href="#nav-baggage" role="tab" aria-controls="nav-baggage" aria-selected="true">Active</a>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item active">
+                              <a class="nav-link" data-toggle="tab" href="#baggage-tab1" role="tab">Active</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">KBP - BOJ</a>
+                              <a class="nav-link" data-toggle="tab" href="#baggage-tab2" role="tab">KBP - BOJ</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">BOJ - KBP</a>
+                              <a class="nav-link" data-toggle="tab" href="#baggage-tab3" role="tab">BOJ - KBP</a>
                             </li>
                         </ul>
 
-                        <div class="tab-content" id="nav-baggage">
+                        <div class="tab-content">
                             <!-- 1 -->
-                            <div class="tab-pane fade active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="tab-pane fade active in" id="baggage-tab1" role="tabpanel">
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/23kg.jpg" alt="img" >
@@ -835,7 +834,7 @@
                                 </div>
                             </div>
                             <!-- 2 -->
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="tab-pane fade" id="baggage-tab2" role="tabpanel">
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/23kg.jpg" alt="img" >
@@ -884,7 +883,7 @@
                                 </div>
                             </div>
                             <!-- 3 -->
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="tab-pane fade" id="baggage-tab3" role="tabpanel" >
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/23kg.jpg" alt="img" >
@@ -973,71 +972,6 @@
                             Оплатить картой иностранного банка
                     </button>
                 </div>
-
-                <!----------- add order-footer-eat ----------->
-                <div class="order-footer-eat">
-                    <div class="eat-box">
-                        <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Kids-Skybox.png" alt="img" >
-                        <div class="eat-box-title">Детский обед</div>
-
-                        <div class="eat-box-numbers">
-                            <input type="text" value="485" id="num" name="num">
-                            <div class="eat-box-numbers-num">
-                                <input type="button" id="buttonCountPlus" value="+">
-                                <div id="buttonCountNumber">1</div>
-                                <input type="button" id="buttonCountMinus" value="-">
-                            </div>
-                            <i>Доступно до 26-05-2021</i>
-                        </div>
-                    </div>
-
-                    <div class="eat-box">
-                        <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Chicken-Roll.png" alt="img" >
-                        <div class="eat-box-title">Детский обед</div>
-
-                        <div class="eat-box-numbers">
-                            <input type="text" value="485" id="num" name="num">
-                            <div class="eat-box-numbers-num">
-                                <input type="button" id="buttonCountPlus" value="+">
-                                <div id="buttonCountNumber">1</div>
-                                <input type="button" id="buttonCountMinus" value="-">
-                            </div>
-                            <i>Доступно до 26-05-2021</i>
-                        </div>
-                    </div>
-
-                    <div class="eat-box">
-                        <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Beef-Roll.png" alt="img" >
-                        <div class="eat-box-title">Детский обед</div>
-
-                        <div class="eat-box-numbers">
-                            <input type="text" value="485" id="num" name="num">
-                            <div class="eat-box-numbers-num">
-                                <input type="button" id="buttonCountPlus" value="+">
-                                <div id="buttonCountNumber">1</div>
-                                <input type="button" id="buttonCountMinus" value="-">
-                            </div>
-                            <i>Доступно до 26-05-2021</i>
-                        </div>
-                    </div>
-
-                    <div class="eat-box">
-                        <img class="img" src="https://chartertickets.com.ua/upload/additional_service/nutrition/Cheese-Roll.png" alt="img">
-                        <div class="eat-box-title">Детский обед</div>
-
-                        <div class="eat-box-numbers">
-                            <input type="text" value="485" class="num" name="num">
-                            <div class="eat-box-numbers-num">
-                                <input type="button" id="buttonCountPlus" value="+">
-                                <div class="buttonCountNumber">1</div>
-                                <input type="button" id="buttonCountMinus" value="-">
-                            </div>
-                            <i>Доступно до 26-05-2021</i>
-                        </div>
-                    </div>
-                </div>
-
-               
             </div>
         </div>
     </div>
