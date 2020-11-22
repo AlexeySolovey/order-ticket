@@ -71,7 +71,7 @@
     border-radius: 5px;
 }
 
-#buttonCountPlus{
+#plus{
     color: #ffffff;
     background-color: #0099ff;
     border: none;
@@ -79,9 +79,10 @@
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     /*id - это уникальный элемент, он не может называться у всех кнопках одинаково. использую для этого стилей классы*/
+    /* Посмотри пожалуйста если все сделал правильно удаляй коментарии*/
 }
 
-#buttonCountMinus{
+#minus{
     color: #ffffff;
     background-color: #0099ff;
     border: none;
@@ -90,10 +91,42 @@
     border-top-left-radius: 5px;
 }
 
-#order-second-step input[type=text]{
+.eat-box-numbers > input[type=text]{
     text-align-last: center;
-    /*border: none;*/  
+    border: none;  
     /*используй родительские классы ты мне ламаешь остальную верстку используя стили ко всем инпутам*/
+    /* Посмотри должно быть правильно, если что-то не так я переделаю. */
+}
+
+.alert-item {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: red;
+    
+    text-align: left;    
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.name-box{
+    /* background: lightblue; */
+    border: 2px solid #dddd;
+}
+.btn-name{
+    margin: 0 auto;
 }
 
 
@@ -148,7 +181,7 @@
         width: 90px;
     }
 
-    #buttonCountPlus, #buttonCountMinus{
+    #plus, #minus{
         padding: 8px 5px 8px 5px;
     }
     

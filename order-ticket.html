@@ -46,6 +46,7 @@
 <meta property="fb:app_id" content="1676732502390699">
 <link href="order-ticket_files/_bootstrap-datepicker3.m.css" rel="stylesheet">
 <link href="order-ticket_files/new-style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -547,35 +548,91 @@
             <!-- табы с едой -->
             <div id="order-second-step">
                 <div class="row">
-                    <div class="col-sm-3" style="background: lightblue;">
+                    <div class="col-sm-3 name-box">
                         <div class="user">
-                            <p>
-                              <a class="btn btn-primary" data-toggle="collapse" href="#passanger-info" role="button">
+                            <p class="btn-name">
+                              <a class="btn btn-light btn-lg btn-block" data-toggle="collapse" href="#passanger-info" role="button">
                                 Alex
                               </a>
+                              
                             </p>
                             <div class="collapse" id="passanger-info">
                                 <ul class="nav nav-tabs">
                                     <li class="nav-item active">
-                                      <a class="nav-link" data-toggle="tab" href="#passanger-info-tab1">K</a>
+                                      <a class="nav-link" data-toggle="tab" href="#passanger-info-tab1">NIKOLAI</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link" data-toggle="tab" href="#passanger-info-tab2">KJ</a>
+                                      <a class="nav-link" data-toggle="tab" href="#passanger-info-tab2">Alex</a>
                                     </li>
                                     <li class="nav-item">
-                                      <a class="nav-link" data-toggle="tab" href="#passanger-info-tab3">BOJ</a>
+                                      <a class="nav-link" data-toggle="tab" href="#passanger-info-tab3">Inna</a>
                                     </li>
                                 </ul>
 
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="passanger-info-tab1" role="tabpanel">
-                                        hello NIKOLAY
+                                        Hello NIKOLAI
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Тварина в багаж 
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Дитина без супроводу
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Сирники з малыновим соусом
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Свинина по-японски
+                                        </div>
                                     </div>
+
                                     <div class="tab-pane" id="passanger-info-tab2" role="tabpanel">
-                                        hello Alex
+                                        Hello Alex
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Тварина в багаж 
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Тварина в салон
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Велосипед
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Сирники з малыновим соусом
+                                        </div>
                                     </div>
+
                                     <div class="tab-pane" id="passanger-info-tab3" role="tabpanel">
-                                        hello Inna
+                                        Hello Inna
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Тварина в салон
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Сирники з малыновим соусом
+                                        </div>
+
+                                        <div class="alert-item">
+                                            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-trash-o" style="font-size:28px"></i></span> 
+                                            Чай
+                                        </div>
                                     </div>
                                 </div>
 
@@ -608,12 +665,19 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
+                                            <!-- <div class="counter">
+                                                <button class="counter_btn" data-direction="minus" type="button">-</button> <br>    
+                                                <input type="text" value="1" class="counter_value">
+                                                <button class="counter_btn" data-direction="plus" type="button">+</button>
+                                            </div> -->
+
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
+                                       
                                     </div>
                 
                                     <div class="eat-box">
@@ -623,9 +687,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -638,9 +702,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -653,9 +717,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" class="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div class="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -672,9 +736,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -687,9 +751,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -702,9 +766,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -717,9 +781,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" class="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div class="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -736,9 +800,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -751,9 +815,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -766,9 +830,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -781,9 +845,9 @@
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" class="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div class="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -821,14 +885,14 @@
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/23kg.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -836,14 +900,14 @@
                 
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/sport.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -851,14 +915,14 @@
                 
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/32kg.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -870,14 +934,14 @@
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/23kg.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -885,14 +949,14 @@
                 
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/sport.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -900,14 +964,14 @@
                 
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/32kg.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -919,14 +983,14 @@
                                 <div class="order-footer-eat">
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/23kg.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -934,14 +998,14 @@
                 
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/sport.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж</div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
@@ -949,14 +1013,14 @@
                 
                                     <div class="eat-box">
                                         <img class="img" src="https://chartertickets.com.ua/upload/additional_service/baggage/32kg.jpg" alt="img" >
-                                        <div class="eat-box-title">Детский обед</div>
+                                        <div class="eat-box-title">Багаж </div>
                 
                                         <div class="eat-box-numbers">
                                             <input type="text" value="485" id="num" name="num">
                                             <div class="eat-box-numbers-num">
-                                                <input type="button" id="buttonCountPlus" value="+">
+                                                <input type="button" id="plus" value="+">
                                                 <div id="buttonCountNumber">1</div>
-                                                <input type="button" id="buttonCountMinus" value="-">
+                                                <input type="button" id="minus" value="-">
                                             </div>
                                             <i>Доступно до 26-05-2021</i>
                                         </div>
