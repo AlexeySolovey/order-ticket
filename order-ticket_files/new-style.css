@@ -78,8 +78,6 @@
     padding: 10px 8px 10px 8px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    /*id - это уникальный элемент, он не может называться у всех кнопках одинаково. использую для этого стилей классы*/
-    /* Посмотри пожалуйста если все сделал правильно удаляй коментарии*/
 }
 
 #minus{
@@ -94,8 +92,6 @@
 .eat-box-numbers > input[type=text]{
     text-align-last: center;
     border: none;  
-    /*используй родительские классы ты мне ламаешь остальную верстку используя стили ко всем инпутам*/
-    /* Посмотри должно быть правильно, если что-то не так я переделаю. */
 }
 
 .alert-item {
@@ -110,7 +106,6 @@
 .closebtn {
     margin-left: 15px;
     color: red;
-    
     text-align: left;    
     line-height: 20px;
     cursor: pointer;
@@ -122,12 +117,34 @@
 }
 
 .name-box{
-    /* background: lightblue; */
     border: 2px solid #dddd;
 }
+
 .btn-name{
-    margin: 0 auto;
+    margin: 10px 0 10px 0;
 }
+
+.btn-name > a{
+    width: 100%;
+    text-decoration: none;
+}
+
+
+.accordion::before {
+    content: '>';
+    color: #8a8888;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transform: rotate(-269deg);
+    font-size: 20px;
+}
+  
+/* .accordion.active::before {
+    content: ">";
+    transform: rotate(-86deg);
+} */
+
 
 
 /* -------------- @media -------------- */
